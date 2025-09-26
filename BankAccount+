@@ -1,0 +1,16 @@
+public class BankAccount {
+    public int accountNumber;
+    public int bankBalance;
+
+    public BankAccount(int AccountNumber , int BankBalance){
+        this.accountNumber = accountNumber;
+        this.bankBalance = bankBalance;
+
+        System.out.printf("The Bank Account %d has been created." , this.accountNumber);
+    }
+
+    public int depositamount(int amount){
+        this.bankBalance += amount;
+        System.out.println("This account now has" + bankBalance);
+    }
+}
